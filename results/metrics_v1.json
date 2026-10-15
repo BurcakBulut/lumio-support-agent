@@ -1,0 +1,17 @@
+{
+  "tickets": 31.0,
+  "action_accuracy": 0.8387096774193549,
+  "tool_correctness": 0.7741935483870968,
+  "category_accuracy (model-classified tickets)": 0.56,
+  "source_recall": 0.7619047619047619,
+  "source_precision": 0.75,
+  "escalation_precision": 0.8461538461538461,
+  "escalation_recall": 0.8461538461538461,
+  "automation_rate (resolved)": 0.3870967741935484,
+  "model_written_answers": 5.0,
+  "hallucinated_policy_rate": 0.0,
+  "tickets_decided_without_model": 6.0,
+  "avg_model_calls_per_ticket": 1.2903225806451613,
+  "avg_tokens_per_ticket": 625.8387096774194,
+  "avg_seconds_per_ticket": 0.9141935483870968
+}
