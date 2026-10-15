@@ -8,6 +8,7 @@ An AI support agent for Lumio, a fictional SaaS company (Free, Plus and Business
 |---|---|
 | `01_eda.ipynb` | Exploratory data analysis: every file profiled, findings ending in "so the agent will …" |
 | `02_agent.ipynb` | The agent: tools, rules, model steps, demo, evaluation and error analysis |
+| `app.py` | Streamlit app: run one ticket and see the decision, reply, sources, tools called, handoff summary, cost and the comparison with the test set; plus the saved evaluation results |
 | `data/` | The scenario data, unchanged |
 | `results/` | Evaluation results: `eval_results.csv` and `metrics.json` (v2), `*_v1` files (first version) |
 | `BRIEF.md` | The project brief |
@@ -19,7 +20,7 @@ An AI support agent for Lumio, a fictional SaaS company (Free, Plus and Business
 3. **Code verifies and acts:** flags must match the customer's own words; refund checks (owner, status, window, €100 limit) run inside the refund tool; password resets go only to the registered email
 4. **Model retrieves and answers:** picks up to 2 of 28 trusted documents; a contradicting document means escalation; answers only from the documents, with citations
 
-Every ticket gets a decision, reason, tools called, sources, reply, handoff summary (for escalations), model calls, tokens and seconds. Tools are mocked in plain Python.
+Every ticket gets a decision, reason, tools called, sources, reply, handoff summary (for escalations), model calls, tokens and seconds. Tools are mocked in plain Python. The Streamlit app (`app.py`) uses the same agent logic as `02_agent.ipynb`.
 
 ## How to run
 
@@ -32,7 +33,11 @@ uv sync
 ollama pull llama3.2:3b
 ```
 
-Open `02_agent.ipynb` in VS Code, select the project's `.venv` as the kernel and run all cells. The evaluation (sections 7 and 8) runs all 31 test tickets and writes to `results/`. "Today" is fixed at 2026-10-01 (from `data/policy_config.json`). The first model call takes longer while the model loads.
+**Notebook:** open `02_agent.ipynb` in VS Code, select the project's `.venv` as the kernel and run all cells. The evaluation (sections 7 and 8) runs all 31 test tickets and writes to `results/`.
+
+**App:** run `uv run streamlit run app.py` and open http://localhost:8501. Pick a ticket and click **Run agent**; the **Evaluation results** tab shows the saved metrics.
+
+"Today" is fixed at 2026-10-01 (from `data/policy_config.json`). The first model call takes longer while the model loads.
 
 ## Results (31 test tickets)
 
@@ -59,4 +64,4 @@ No API cost: the model runs locally. 6 of 31 tickets are decided by rules alone.
 
 - Small test set (31 tickets); the v2 fix was designed and tested on the same set
 - The 3B model is weak at categories (0.56) and free-text answers; answers should be reviewed by a person before sending
-- Next: fix the contradicting documents at the source, embedding-based retrieval, a stronger model, shadow mode on real tickets, a real identity check
+- Next: fix the contradicting documents at the source, embedding-based retrieval, a stronger model, shadow mode on real tickets, a real identity check, tools behind an MCP server
