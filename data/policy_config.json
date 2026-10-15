@@ -1,0 +1,62 @@
+{
+  "company": "Lumio (fictional)",
+  "as_of_date": "2026-10-01",
+  "currency": "EUR",
+  "refund_auto_limit": 100.0,
+  "refund_windows_days": {
+    "annual": 30,
+    "hardware": 30,
+    "monthly": 7,
+    "addon": 7
+  },
+  "duplicate_charges_ignore_window": true,
+  "escalation_keywords": [
+    "lawyer",
+    "sue",
+    "legal action",
+    "solicitor",
+    "chargeback",
+    "data breach",
+    "vulnerability",
+    "journalist",
+    "press",
+    "gdpr complaint",
+    "regulator"
+  ],
+  "sla_hours": {
+    "urgent": 4,
+    "normal": 24,
+    "low": 72
+  },
+  "min_confidence_to_resolve": 0.75,
+  "tools": {
+    "lookup_customer": {
+      "side_effects": false,
+      "description": "Read a customer record by id or email."
+    },
+    "lookup_order": {
+      "side_effects": false,
+      "description": "Read an order by id."
+    },
+    "issue_refund": {
+      "side_effects": true,
+      "description": "Refund an order (mock). Must enforce refund_auto_limit in code."
+    },
+    "reset_password": {
+      "side_effects": true,
+      "description": "Send a reset email to the REGISTERED email only (mock)."
+    },
+    "cancel_subscription": {
+      "side_effects": true,
+      "description": "Cancel at end of billing period (mock)."
+    },
+    "update_ticket": {
+      "side_effects": true,
+      "description": "Add a note / change status on the ticket (mock)."
+    },
+    "escalate_to_human": {
+      "side_effects": true,
+      "description": "Hand off with a summary (mock)."
+    }
+  }
+}

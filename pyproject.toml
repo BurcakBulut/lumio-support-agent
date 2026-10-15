@@ -1,0 +1,12 @@
+[project]
+name = "lumio-support-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "ollama>=0.6.3",
+    "pandas>=3.0.6",
+]

@@ -1,0 +1,35 @@
+doc_id,title,category,version,last_updated,status,audience
+KB-BIL-001,Billing cycles and invoices,billing,3,2026-03-10,active,customer
+KB-BIL-002,Updating your payment method and billing email,billing,2,2026-02-02,active,customer
+KB-BIL-003,Failed payments and retries,billing,2,2026-01-08,active,customer
+KB-BIL-004,Plans and pricing,billing,4,2026-06-01,active,customer
+KB-BIL-005,Plans and pricing,billing,2,2024-11-15,deprecated,customer
+KB-BIL-006,Duplicate or unexpected charges,billing,2,2026-02-20,active,customer
+KB-REF-001,Refund policy,refunds,3,2026-04-15,active,customer
+KB-REF-002,Refund policy,refunds,1,2024-02-20,active,customer
+KB-REF-003,Refund approval thresholds (internal),refunds,2,2026-04-15,active,internal
+KB-REF-004,Annual plan refund FAQ (partner edition),refunds,1,2026-05-02,active,partner
+KB-ACC-001,Resetting your password,account_access,3,2026-01-20,active,customer
+KB-ACC-002,Locked accounts,account_access,2,2025-11-03,active,customer
+KB-ACC-003,Setting up two-factor authentication,account_access,2,2026-03-02,active,customer
+KB-ACC-004,Changing your account email,account_access,1,2025-09-14,active,customer
+KB-ACC-005,Inviting team members,account_access,2,2026-02-27,active,customer
+KB-ACC-006,Business plan seat limits,account_access,2,2026-02-14,active,customer
+KB-PLN-001,Upgrading or downgrading your plan,plan_changes,3,2026-01-30,active,customer
+KB-PLN-002,Storage add-ons,plan_changes,1,2025-12-01,active,customer
+KB-PLN-003,Team limits and add-ons,plan_changes,3,2026-05-20,active,customer
+KB-SHP-001,Shipping times and carriers,shipping,3,2026-03-01,active,customer
+KB-SHP-002,Lumio Hub delivery FAQ,shipping,2,2025-12-12,active,customer
+KB-SHP-003,Tracking your order,shipping,2,2026-01-15,active,customer
+KB-SHP-004,Lost or damaged packages,shipping,2,2026-02-09,active,customer
+KB-SHP-005,Returning your Lumio Hub,shipping,3,2026-04-15,active,customer
+KB-SHP-006,Returning your Lumio Hub,shipping,1,2024-05-10,deprecated,customer
+KB-CAN-001,Cancelling your subscription,cancellations,2,2026-01-12,active,customer
+KB-CAN-002,Cancelling a Hub order before shipment,cancellations,1,2025-10-05,active,customer
+KB-TEC-001,Hub setup and pairing,technical,2,2026-02-12,active,customer
+KB-TEC-002,Troubleshooting sync issues,technical,2,2026-03-25,active,customer
+KB-TEC-003,Supported browsers and apps,technical,1,2026-01-05,active,customer
+KB-PRV-001,Exporting your data,data_privacy,3,2026-03-18,active,customer
+KB-PRV-002,Exporting your data,data_privacy,1,2024-09-09,deprecated,customer
+KB-PRV-003,Requesting account deletion,data_privacy,2,2026-02-18,active,customer
+KB-PRV-004,Privacy and data retention,data_privacy,2,2026-02-18,active,customer
